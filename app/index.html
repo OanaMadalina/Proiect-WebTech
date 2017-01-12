@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inscriere la facultate</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+
+<h1><center>Bine ati venit! Inscriere la facultate 2017!</center></h1>
+<br>
+<br>
+<br>
+<p>Introducere date student:</p>
+<br>
+<div ng-app="myApp" ng-controller="myCtrl">
+
+{{Nume}}: &nbsp &nbsp  <input type="text" ng-model="nume"><br>
+{{Prenume}}: <input type="text" ng-model="prenume"><br>
+{{Adresa}}:&nbsp &nbsp <input type="text" ng-model="adresa"><br>
+{{Medie}}: &nbsp &nbsp&nbsp<input type="text" ng-model="medie"><br>
+<br>
+<br>
+<br>
+<button type="button">Adauga</button>
+</div>
+
+<div ng-app="myApp2" ng-controller="myCtrl2"> 
+
+<table>
+   
+  <tr>
+    <td>Nume</td>
+    <td>Prenume</td>
+  </tr>
+   <tr>
+    <td>Ilie</td>
+    <td>Oana</td>
+  </tr>
+   <tr>
+    <td>Iliescu</td>
+    <td>Ion</td>
+  </tr>
+</table>
+<button type="button">Modifica</button>
+<button type="button">Sterge</button>
+</div>
+
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.Nume = "Nume";
+    $scope.Prenume = "Prenume";
+    $scope.Adresa = "Adresa";
+    $scope.Medie = "Medie";
+});
+</script>
+
+
+
+
+
+
+</body>
+</html>
